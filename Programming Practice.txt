@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class MyProgram
+{
+    
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Hi");
+        int x=17;
+        double y=3*x; 
+        double answer= 5*y*341/265-132;
+        System.out.println(answer);
+        if (answer>0){
+            System.out.println("the number is positive");
+        }
+        else if (answer<0){
+            System.out.println("the number is negative");
+        }
+        else {
+            System.out.println("the number is zero");
+        }
+        double userInput = input.nextInt();
+        if (userInput == 0){
+            System.out.println("undefined");
+        }
+        if (userInput != 0){
+            double result = 1/userInput;
+            System.out.println(result);
+        }
+    }
+}
